@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p#bb {
+            color: brown;
+        }
+        p.aa {
+            color: yellow;
+        }
+        #bb {
+            color: palevioletred;
+        }
+        .aa {
+            color: red;
+        }
+        p {
+            /* font-size: 12px; */
+            color: blue;
+        }
+        p strong {
+            color: greenyellow;
+        }
+        p > strong {
+            color: green;
+        }
+        p > strong::before {
+            content: "My test is：";
+            /* margin-right: 3px; */
+        }
+        a[target="_blank"]:hover {
+            color: beige;
+        }
+        a {
+            text-decoration: none;
+            color: goldenrod;
+        }
+        button {
+            border: 1;
+            outline: 0;
+            background-color: transparent;
+        }
+        body {
+            /* background: orange; */
+        }
+    </style>
+</head>
+<body>
+    hello world
+    <h1 class="aa">HAHAHAHA</h1>
+    <h2>H2</h2>
+    <button>TEST</button>
+    <p class="aa" id="bb">A decent markdown <em>finally <strong>available</strong></em> on Windows</p>
+    <p id="bb">A decent <u>markdown editor finally</u> available on Windows</p>
+    <p class="aa">A decent <del>editor finally available on</del>  Windows</p>
+    <p>A decent <strong>editor finally available</strong>  on Windows</p>
+    <p>A decent <i>editor finally available</i>  on Windows</p>
+    <a target="_blank" href="http://www.google.com">GOOGLE</a>
+    <br>
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google icon">
+
+    <table border="1">
+        <tr>
+            <th>fruit</th>
+            <th>vegetable</th>
+        </tr>
+        <tr>
+            <td>apple</td>
+            <td>cucumber</td>
+         </tr>
+    </table>
+
+    <ol>
+        <li>Olive</li>
+        <li>Olive</li>
+        <li>Olive</li>
+        <li>Olive</li>
+        <li>Olive</li>
+    </ol>
+    <ul>
+        <li>Onion</li>
+        <li>Onion</li>
+        <li>Onion</li>
+        <li>Onion</li>
+        <li>Onion</li>
+    </ul>
+
+</body>
+</html>
