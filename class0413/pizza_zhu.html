@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza Creator</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        h2, h4 {
+            text-align: left;
+            line-height: 100%;
+        }
+        .layout {
+            display: grid;
+            grid-template-columns: 550px 1fr;
+            grid-column-gap: 26px;
+        }
+        .layout_left img {
+            width: 100%;
+            height: 100%;
+        }
+        .layout_right {
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+        }
+        .subtitle {
+            margin-bottom: -15px;
+        }
+        .subtitle h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: #6e7790;
+        }
+        .DetailsItemsBox {
+            --gap: 26px;
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            /* grid-template-columns有效，但是换成grid-template-rows就没有效果了*/
+            /* grid-template-rows: repeat(3, auto); */
+            grid-column-gap: var(--gap);
+            grid-row-gap: 30px;
+        }
+        .DetailsItem {
+            display: grid;
+            grid-template-rows: 40px 43px;
+            color: #6e7790;
+        }
+        .DetailsItem__top {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+        .DetailsItem__top h4 {
+            font-size: 12px;
+        }
+        .DetailsItem__top h4 span {
+            color: red;
+        }
+
+    </style>
+</head>
+<body class="layout">
+    <div class="layout_left">
+        <img src="images/pizza_pic_tem.png" alt="pizza_pic_tem">
+    </div>
+    <div class="layout_right">
+        <div class="InfoDetails">
+            <div class="subtitle">
+                <h2>Enter your details</h2>
+            </div>
+            <div class="DetailsItemsBox">
+                <div class="DetailsItem">
+                    <div class="DetailsItem__top">
+                        <h4>NAME&nbsp<span>*</span></h4>
+                        <h4><span>FIELD IS REQUIRED</span></h4> 
+                        <!-- <h4 class="red">FIELD IS REQUIRED</h4> 
+                        给h4加color可以:
+                        <h4 style="color:red;">FIELD IS REQUIRED</h4>|
+                        但是，给h4的class加color没用:
+                        <h4 class="red;">FIELD IS REQUIRED</h4> --style中.red {color:red;}|
+                        但是用span包起来，不论给span还是span的class加都ok -->
+                    </div>
+                    <input type="text" value="John Smith">
+                    <!-- input用div包起来，width就变得很小，不包，就和父模块一样宽 -->
+                </div>
+                <div class="DetailsItem">
+                    <div class="DetailsItem__top">
+                        <h4>EMAIL&nbsp<span>*</span></h4>
+                        <h4><span>FIELD IS REQUIRED</span></h4>
+                    </div> 
+                    <input type="text" value="John Smith">
+                </div>
+                <div class="DetailsItem">
+                    <div class="DetailsItem__top"> 
+                        <h4>CONFIRM&nbsp<span>*</span></h4>
+                        <h4><span>FIELD IS REQUIRED</span></h4> 
+                    </div>
+                    <input type="text" value="John Smith">
+                </div>
+                <div class="DetailsItem">
+                    <div class="DetailsItem__top"> 
+                        <h4>ADDRESS&nbsp<span>*</span></h4>
+                        <h4><span>FIELD IS REQUIRED</span></h4> 
+                    </div>
+                    <input type="text" value="John Smith">
+                </div>
+                <div class="DetailsItem">
+                    <div class="DetailsItem__top"> 
+                        <h4>POSTCODE&nbsp<span>*</span></h4>
+                        <h4><span>FIELD IS REQUIRED</span></h4> 
+                    </div>
+                    <input type="text" value="John Smith">
+                </div>
+                <div class="DetailsItem">
+                    <div class="DetailsItem__top"> 
+                        <h4>CONTACT NUMBER&nbsp<span>*</span></h4>
+                        <h4><span>FIELD IS REQUIRED</span></h4> 
+                    </div>
+                    <input type="text" value="John Smith">
+                 </div>
+            </div>
+        </div>
+        <div class="PizzaCategory">
+            <div class="subtitle">
+                <h2>Choose your pizzas</h2>
+            </div>
+        </div>
+        <div class="OrderSum">
+            <div class="subtitle">
+                <h2>Order Summary</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            /* width: 80px; */
+            background-color: greenyellow;
+            display: flex;
+        }
+        .header__left {
+            flex: 1;
+        }
+        .section {
+            flex: 1;
+            background-color: rosybrown;
+        }
+        .section__top {
+            display: flex;
+        }
+        .section__top--search{
+            flex: 1;
+        }
+        .footer {
+            width: 90px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__left">
+            <a href="www.ebay.com.au" target="_blank">Account</a>
+            <a href="www.ebay.com.au" target="_blank">ebayplus</a>
+            <a href="www.ebay.com.au" target="_blank">eBay Deals</a>
+            <a href="www.ebay.com.au" target="_blank">Gift Cards</a>
+        </div>
+        <div class="header__right">
+            <a href="www.ebay.com.au" target="_blank">Sell</a>
+            <a href="www.ebay.com.au" target="_blank">My eBay</a>
+        </div>
+    </header>
+    <section class="section">
+        <div class="section__top">
+            <div class="section__top--icon">
+                <img src="images/ebay_cut.png" alt="ebay icon">
+            </div>
+            <div class="section__top--category">
+                <a href="www.ebay.com.au" target="_blank">Category</a>
+            </div>
+            <div class="section__top--search">
+                <input type="text" value="Search for anything">
+                <input type="text" value="All categories">
+                <button>Search</button>
+            </div>
+            <div class="section__top--advance">
+                    <a href="www.ebay.com.au" target="_blank">Advanced</a>
+            </div>
+        </div>
+        <div class="section__mid">
+            <img src="images/pic_wine.png" alt="pic wine">
+        </div>
+    </section>
+    <footer class="footer"></footer>
+</body>
+</html>
