@@ -7,3 +7,5 @@ myapp-copy-pizza-topping-bysteps
 2. use express generator to create myapp
 
 3. add toppings api(get and post)
+
+4. add toppings api (patch, delete and get a topping)
