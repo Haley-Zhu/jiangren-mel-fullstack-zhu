@@ -8,4 +8,6 @@ myapp-copy-pizza-topping-bysteps
 
 3. add toppings api(get and post)
 
-4. add toppings api (patch, delete and get a topping)
+3.1 add toppings api (patch, delete and get a topping)
+
+3.2 add toppings api (put a topping)

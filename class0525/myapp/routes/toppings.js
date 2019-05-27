@@ -33,11 +33,19 @@ router.patch('/:id', function(req, res, next) {
     res.json(newItem);
 })
 
+// put topping
+router.put('/:id', function(req, res, next) {
+    let getId = req.params.id;
+    let newItem = Object.assign({}, {id: getId}, req.body);
+    toppings.splice(getId - 1, 1, newItem);
+    res.json(newItem);
+})
+
 // delete a topping
 router.delete('/:id', function(req, res, next) {
     let getId = req.params.id;
-    toppings.splice(getId - 1, 1);
-    res.json(toppings);
+    let deleted = toppings.splice(getId - 1, 1);
+    res.json(deleted);
 })
 
 module.exports = router;
